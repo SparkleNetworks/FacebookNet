@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+
+  <ApiGroup Name="Pages">
+    <ApiMethod MethodName="Get" HttpMethod="GET" ReturnType="Page"
+               Title="returns a single 'page'"
+               Path="/v2.2/{PageId}" ></ApiMethod>
+
+    <ReturnType Name="Page" >
+      <Field Name="id" Title="The Page ID." />
+      <Field Name="about" Title="Information about the Page." />
+      <Field Name="attire" Title="Dress code of the business. Applicable to Restaurants or Nightlife. Can be one of Casual, Dressy or Unspecified." />
+      <Field Name="band_members" Title="Members of the band. Applicable to Bands." />
+      <Field Name="best_page" Title="The best available Page on Facebook for the concept represented by this Page. The best available Page takes into account authenticity and fan count." Type="Page" />
+      <Field Name="birthday" Title="Birthday of this person. Applicable to Pages representing people." />
+      <Field Name="booking_agent" Title="Booking agent of the band. Applicable to Bands." />
+      <Field Name="can_post" Title="Whether the current session user can post on this Page." Type="bool" />
+      <Field Name="category" Title="The Page's main category. e.g. Product/Service, Computers/Technology." />
+      <Field Name="category_list" Title="The Page's sub-categories." Remark="PageCategory[]" />
+      <Field Name="checkins" Title="Number of checkins at a place represented by a Page." Type="int" />
+      <Field Name="company_overview" Title="The company overview. Applicable to Companies." />
+      <Field Name="cover" Title="Information about the Page's cover photo." Type="FacebookNet.Common.CoverPhoto" />
+      <Field Name="context" Title="Provides access to available social context edges for this Page. A list of edges are provided below." Type="object" />
+      <Field Name="current_location" Title="Current location of the Page." />
+      <Field Name="description" Title="The description of the Page." />
+      <Field Name="directed_by" Title="The director of the film. Applicable to Films." />
+      <Field Name="founded" Title="When the company is founded. Applicable to Companies." />
+      <Field Name="general_info" Title="General information provided by the Page." />
+      <Field Name="general_manager" Title="General manager of the business. Applicable to Restaurants or Nightlife." />
+      <Field Name="global_brand_page_name" Title="If the Page is in a Global Pages structure and the viewer has a role on the Page, this is the Page name with the country code(s) that redirect to it appended in parentheses. If the Page isn't part of a Global Pages structure or if the viewer doesn't have a role on the Page, this is simply the Page name." />
+      <Field Name="global_brand_parent_page" Title="If the Page is in a Global Pages structure, this is the brand's global (parent) Page." Type="Page" />
+      <Field Name="hometown" Title="Hometown of the band. Applicable to Bands." />
+      <!--<Field Name="hours:({day}_{number}_{status})" Title="Indicates the opening hours for this location." Remark="{day}_{number}_{status} Indicates a single range of opening hours for a day. Each day can have 2 different hours ranges. {day} should be the first 3 characters of the day of the week, {number} should be either 1 or 2 to allow for the two different hours ranges per day. {status} should be either open or close to delineate the start or end of a time range. An example would be mon_1_open with value 17:00 and mon_1_close with value 21:15 which would represent a single opening range of 5pm to 9:15pm on Mondays." />-->
+      <Field Name="impressum" Title="Impressum for this page. Only required for German pages." />
+      <Field Name="is_permanently_closed" Title="For businesses that are no longer operating." Type="bool" />
+      <Field Name="is_published" Title="Indicates whether the Page is published and visible to non-admins." Type="bool" />
+      <Field Name="is_unclaimed" Title="Indicates whether the Page is unclaimed." Type="bool" />
+      <Field Name="is_verified" Title="Pages with large numbers of followers can have the authenticity of their identity manually verified by Facebook. This field indicates whether the page is verified in this way." Type="bool" />
+      <Field Name="likes" Title="The number of users who like the Page. For Global Brand Pages this is the count for all pages across the brand." Type="int" />
+      <Field Name="link" Title="The Page's Facebook URL." />
+      <Field Name="location" Title="The location of this place. Applicable to all Places." Type="object" Remark="This will be an object unless the tagged place is an Event, in which case it returns a string." />
+      <Field Name="mission" Title="The company mission. Applicable to Companies." />
+      <Field Name="name" Title="The name of the Page. This field can only be updated when the Page has less than 200 fans." />
+      <Field Name="name_with_location_descriptor" Title="The name of a Location Page that provides additional location information for that Page beside its name." />
+      <Field Name="parking" Title="Information about the parking available at a place." Type="object" />
+      <Field Name="payment_options" Title="Information about the available payment options at a place." Type="object" />
+      <Field Name="phone" Title="Phone number provided by a Page." />
+      <Field Name="press_contact" Title="Press contact information of the band. Applicable to Bands." />
+      <Field Name="price_range" Title="Price range of the business. Applicable to Restaurants or Nightlife." Remark="Values: '$ (0-10)', '$$ (10-30)', '$$$ (30-50)', '$$$$ (50+)', 'Unspecified'" />
+      <Field Name="restaurant_services" Title="Services the restaurant provides. Applicable to Restaurants." Type="object" />
+      <Field Name="restaurant_specialties" Title="The restaurant's specialties. Applicable to Restaurants." Type="object" />
+      <Field Name="talking_about_count" Title="The number of people talking about this Page." Type="int" />
+      <Field Name="username" Title="The alias of the Page. For example, for www.facebook.com/platform the username is 'platform'." />
+      <Field Name="website" Title="The URL of the Page's website." />
+      <Field Name="were_here_count" Title="The number of visits to this Page's location. If the Page setting Show map, check-ins and star ratings on the Page (under Page Settings > Page Info > Address) is disabled, then this value will also be disabled." Type="int" />
+    </ReturnType>
+  </ApiGroup>
+
+  <ApiGroup Name="Common">
+
+    <ReturnType Name="CoverPhoto">
+      <Field Name="id" Title="ID of the Photo that represents this cover photo." Remark="remark" />
+      <Field Name="source" Title="URL to the Photo that represents this cover photo." Remark="remark" />
+      <Field Name="offset_y" Title="The vertical offset in pixels of the photo from the bottom." Type="int" Remark="remark" />
+      <Field Name="offset_x" Title="The horizontal offset in pixels of the photo from the left." Type="int" Remark="remark" />
+    </ReturnType>
+
+  </ApiGroup>
+
+</Root>
