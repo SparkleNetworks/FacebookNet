@@ -1,0 +1,95 @@
+# Graph API - To do
+
+## Mains
+
+- [ ] /ad-campaign
+- [ ] /app-request
+- [ ] /application
+- [ ] /friend-list
+- [ ] /hashtag
+- [ ] /life-event
+- [ ] /mailing-address
+- [ ] /offsite-pixel
+- [ ] [/page](https://developers.facebook.com/docs/graph-api/reference/page) - The /{page-id} node returns a single page.
+    - [ ] Fields
+    - [ ] Edges
+    - [ ] Updating
+    - [ ] Deleting
+- [ ] /photo
+- [ ] /place-tag
+- [ ] /product-feed
+- [ ] /product-feed-upload
+- [ ] /product-feed-upload-error
+- [ ] /product-group
+- [ ] /product-item
+- [ ] /product-set
+- [ ] /promotion-info
+- [ ] /user
+- [ ] /video
+- [ ] /video-broadcast
+- [ ] /video-list
+- [ ] Achievement
+- [ ] Achievement Type
+- [ ] Album
+- [ ] App Link Host
+- [ ] Comment
+- [ ] Conversation
+- [ ] Debug Token
+- [ ] Domain
+- [ ] Event
+- [ ] Friendlist
+- [ ] Group
+- [ ] Group Doc
+- [ ] Link
+- [ ] Message
+- [ ] Milestone
+- [ ] Notification
+- [ ] Object Comments
+- [ ] Object Insights
+- [ ] Object Likes
+- [ ] Object Sharedposts
+- [ ] Offer
+- [ ] Payment
+- [ ] Post
+- [ ] Profile
+- [ ] Request
+- [ ] Review
+- [ ] Status
+- [ ] Test User
+- [ ] Thread
+- [ ] URL
+
+## Edges
+
+- [ ] albums
+    - [for pages](https://developers.facebook.com/docs/graph-api/reference/page/albums/)
+- [ ] blocked
+- [ ] events
+- [ ] featured_videos_collection
+- [ ] global_brand_children
+- [ ] insights
+- [ ] posts_insights
+- [ ] place_topics
+- [ ] links
+- [ ] locations
+- [ ] milestones
+- [ ] offers
+- [ ] photos
+- [ ] picture
+- [ ] ratings
+- [ ] roles
+- [ ] screennames
+- [ ] settings
+- [ ] statuses
+- [ ] subscribed_apps
+- [ ] tabs
+- [ ] video_broadcasts
+- [ ] videos
+- [ ] video_lists
+- [ ] conversations
+- [ ] feed
+- [ ] notes
+- [ ] notifications
+- [ ] posts
+- [ ] questions
+- [ ] threads
